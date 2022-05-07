@@ -27,4 +27,29 @@ React Native0.62 이후 버전에서는 설치만으로 사용가능
 openssl 미설치시 설치 후 진행
 [Flipper 설치 사이트...](https://fbflipper.com/)
 
+## App 이름 변경
+경로 : FoodDeliveryApp\app.json (현재 컴퓨터 세팅상 App 꺼짐 오류때문에 변경은 하지 않음)
+```c
+{
+  "name": "FoodDeliveryApp",
+  "displayName": "봉봉라이더스"
+}
+```
+
+경로 : FoodDeliveryApp\android\app\src\main\res\values\strings.xml
+```c
+<resources>
+    <string name="app_name">봉봉라이더스</string>
+</resources>
+
+```
+
+경로 : FoodDeliveryApp\ios\FoodDeliveryApp\Info.plist
+```c
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>봉봉라이더스</string>
+
+```
 
