@@ -41,6 +41,10 @@ React Native0.62 이후 버전에서는 설치만으로 사용가능
 openssl 미설치시 설치 후 진행
 [Flipper 설치 사이트...](https://fbflipper.com/)
 
+```c
+npm i react-native-flipper redux-flipper rn-async-storage-flipper
+```
+
 
 
 
@@ -68,6 +72,27 @@ openssl 미설치시 설치 후 진행
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>BongbongRiders</string>
-
 ```
+
+## navigation 설치 
+```c
+npm i @react-navigation/native @react-navigation/native-stack
+npm i react-native-screens react-native-safe-area-context
+```
+
+navigation 세팅
+FoodDeliveryApp\android\app\src\main\java\com\fooddeliveryapp\MainActivity.java
+```c
+  // navigation setting
+  import android.os.Bundle;
+
+  // navigation setting
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
+  }
+```
+
+
+
 
