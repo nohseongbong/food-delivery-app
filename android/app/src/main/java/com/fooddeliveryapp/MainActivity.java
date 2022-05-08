@@ -3,6 +3,8 @@ package com.fooddeliveryapp;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+// navigation setting
+import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
 
@@ -36,5 +38,12 @@ public class MainActivity extends ReactActivity {
       reactRootView.setIsFabric(BuildConfig.IS_NEW_ARCHITECTURE_ENABLED);
       return reactRootView;
     }
+  }
+
+
+  // navigation setting
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
   }
 }
